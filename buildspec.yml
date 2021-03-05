@@ -8,6 +8,8 @@ phases:
     build:
         commands:
            #- nuget restore
+           - apt-get update && apt-get install -y lcov
+           - genhtml
            - msbuild AspWithNUnit.sln /p:TargetFrameworkVersion=v4.5 /p:Configuration=Release /p:DeployIisAppPath="Default Web Site" /p:PackageAsSingleFile=false /p:OutDir=C:\codebuild\artifacts\ /t:Package
 artifacts:
   files:
