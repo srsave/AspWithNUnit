@@ -6,8 +6,12 @@ env:
     DOTNET_FRAMEWORK: 4.5
 phases:
     install:
-        runtime-versions:
-            DOTNET_FRAMEWORK: 4.5
+        #runtime-versions:
+            #DOTNET_FRAMEWORK: 4.5
+        commands:
+          - dotnet tool install -g AWS.CodeArtifact.NuGet.CredentialProvider
+          - dotnet codeartifact-creds install
+    
     build:
         commands:
            - nuget restore
