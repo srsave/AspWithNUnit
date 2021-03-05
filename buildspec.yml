@@ -1,17 +1,30 @@
 version: 0.2
 
 env:
-  variables:
-    PROJECT: AspWithNUnit
-    DOTNET_FRAMEWORK: 4.5
+    variables:
+        PROJECT: AspWithNUnit
+        DOTNET_FRAMEWORK: 4.5
 phases:
+    install:
+        runtime-versions:
+            dotnet: latest
+    commands:
+        - export PATH="$PATH:/root/.dotnet/tools"
+        - dotnet tool install -g AWS.CodeArtifact.NuGet.CredentialProvider
+        - dotnet codeartifact-creds install
+    pre_build:
+        commands:
+        - dotnet nuget add source -n codeartifact $(aws codeartifact get-repository-endpoint --domain my_domain --domain-owner 111122223333 --repository my_repo --format nuget --query repositoryEndpoint --output text)"v3/index.json"
+
+
     build:
         commands:
-           - nuget restore
-           #- apt-get update && apt-get install -y lcov
-           #- genhtml
-           - msbuild AspWithNUnit.sln /p:TargetFrameworkVersion=v4.5 /p:Configuration=Release /p:DeployIisAppPath="Default Web Site" /p:PackageAsSingleFile=false /p:OutDir=C:\codebuild\artifacts\ /t:Package
+            - nuget restore
+            - msbuild -t:Rebuild -p:Configuration=Release
+            #- apt-get update && apt-get install -y lcov
+            #- genhtml
+            #- msbuild AspWithNUnit.sln /p:TargetFrameworkVersion=v4.5 /p:Configuration=Release /p:DeployIisAppPath="Default Web Site" /p:PackageAsSingleFile=false /p:OutDir=C:\codebuild\artifacts\ /t:Package
 artifacts:
-  files:
-    - '**/*'
-  base-directory: 'C:\codebuild\artifacts\_PublishedWebsites\${env:PROJECT}_Package\Archive\'
+    files:
+        - '**/*'
+    base-directory: 'C:\codebuild\artifacts\_PublishedWebsites\${env:PROJECT}_Package\Archive\'
