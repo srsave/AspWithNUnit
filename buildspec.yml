@@ -8,9 +8,7 @@ phases:
       - export PATH="$PATH:/root/.dotnet/tools"
       - dotnet tool install -g AWS.CodeArtifact.NuGet.CredentialProvider
       - dotnet codeartifact-creds install
-  pre_build:
-    commands:
-      - dotnet nuget add source -n codeartifact $(aws codeartifact get-repository-endpoint --domain my_domain --domain-owner 111122223333 --repository my_repo --format nuget --query repositoryEndpoint --output text)"v3/index.json"
+      
   build:
-    commands:
-      - msbuild -t:Rebuild -p:Configuration=Release
+        commands:
+          - dotnet build -c Release AspWithNUnit.sln
