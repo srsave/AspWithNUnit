@@ -30,3 +30,13 @@ G:\Github\SampleCoreApp\AspWithNUnit\AspWithNUnit.Test\obj\Debug\AspWithNUnit.Te
 G:\Github\SampleCoreApp\AspWithNUnit\AspWithNUnit.Test\obj\Debug\AspWithNUnit.Test.csproj.CopyComplete
 G:\Github\SampleCoreApp\AspWithNUnit\AspWithNUnit.Test\obj\Debug\AspWithNUnit.Test.dll
 G:\Github\SampleCoreApp\AspWithNUnit\AspWithNUnit.Test\obj\Debug\AspWithNUnit.Test.pdb
+G:\Github\AspWithNUnit\Publish\NUnit3.TestAdapter.dll
+G:\Github\AspWithNUnit\Publish\NUnit3.TestAdapter.pdb
+G:\Github\AspWithNUnit\Publish\nunit.engine.dll
+G:\Github\AspWithNUnit\Publish\nunit.engine.api.dll
+G:\Github\AspWithNUnit\Publish\nunit.engine.core.dll
+G:\Github\AspWithNUnit\Publish\AspWithNUnit.Test.dll
+G:\Github\AspWithNUnit\Publish\AspWithNUnit.Test.pdb
+G:\Github\AspWithNUnit\AspWithNUnit.Test\obj\Debug\AspWithNUnit.Test.csprojResolveAssemblyReference.cache
+G:\Github\AspWithNUnit\AspWithNUnit.Test\obj\Debug\AspWithNUnit.Test.dll
+G:\Github\AspWithNUnit\AspWithNUnit.Test\obj\Debug\AspWithNUnit.Test.pdb
