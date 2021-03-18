@@ -17,6 +17,7 @@ phases:
           #-04
           #-05
           #-06
+          #-07PC
 
     build:
         commands:
