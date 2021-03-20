@@ -13,6 +13,7 @@ phases:
           #- dotnet codeartifact-creds install
           #-01
           #-02
+          #-03
           
 
     build:
