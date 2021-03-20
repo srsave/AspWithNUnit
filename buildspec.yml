@@ -12,12 +12,7 @@ phases:
           #- dotnet tool install -g AWS.CodeArtifact.NuGet.CredentialProvider
           #- dotnet codeartifact-creds install
           #-01
-          #-02
-          #-03
-          #-04
-          #-05
           
-
     build:
         commands:
            - nuget restore
