@@ -17,6 +17,7 @@ phases:
           #-04
           #-05
           #-06 abc
+          #-07 XYZ
           
     build:
         commands:
