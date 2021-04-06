@@ -12,14 +12,7 @@ phases:
           #- dotnet tool install -g AWS.CodeArtifact.NuGet.CredentialProvider
           #- dotnet codeartifact-creds install
           #-01abc
-          #-02
-          #-03
-          #-04
-          #-05
-          #-06 abc
-          #-07 XYZ
-          #-08 Sudeep11
-          #-09 city
+          
           
     build:
         commands:
