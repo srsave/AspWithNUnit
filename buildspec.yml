@@ -12,11 +12,13 @@ phases:
           #- dotnet tool install -g AWS.CodeArtifact.NuGet.CredentialProvider
           #- dotnet codeartifact-creds install
           #-01
-          #-02
-          #-03
-          #-04
-          #-05
+          #-0212223
+          #-SDGAPP-57
+          #-SDGAPP-57 new 01 02
+          #- SDGAPP-79
 
+
+          
     build:
         commands:
            - nuget restore
