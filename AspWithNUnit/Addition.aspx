@@ -15,7 +15,20 @@
 </head>
 <body>
       <div class="container body-content" style="vertical-align:central">
-     <h2 style="background-color:green; color:white; padding:inherit"   >Asp.Net Example (Using DevOps)</h2>
+	  <%--        <div style="background-color: green; color: white; padding: inherit">
+             <img style="margin: 5px;" src="icicilogo2.png" />
+            <h2 style="background-color: green; color: white; padding: inherit">Asp.Net Example (Using DevOps)</h2>
+        </div>--%>
+       
+        <div style="background-color: orange;color: white;height: 75px;padding: inherit;width: 100%;display: block;">
+    <div style=" width: 40%; float: left;">
+             <img style="margin: 5px;/* float: left; */" src="icicilogo2.png">
+        </div>
+    <div>
+            <div style="font-size: 30px;text-align: right;font-weight: bold;padding-top: 15px;">Asp.Net Example (Using DevOps)</div>
+        </div>
+        </div>
+     
 <h2>Add Test</h2>
 
 <h4>Addition of 2 Numbers</h4>
