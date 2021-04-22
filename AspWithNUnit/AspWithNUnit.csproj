@@ -68,6 +68,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Addition.aspx" />
+    <Content Include="icicilogo1.png" />
+    <Content Include="icicilogo2.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
