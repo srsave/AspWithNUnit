@@ -15,8 +15,7 @@
 </head>
 <body>
       <div class="container body-content" style="vertical-align:central">
-	  <%--       #01
-	  <div style="background-color: green; color: white; padding: inherit">
+	   <%--        <div style="background-color: green; color: white; padding: inherit">
              <img style="margin: 5px;" src="icicilogo2.png" />
             <h2 style="background-color: green; color: white; padding: inherit">Asp.Net Example (Using DevOps)</h2>
         </div>--%>
